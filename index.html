@@ -5,85 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respsonsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tie up Apron-food blogging</title>
 </head>
 <body>
     <div class="container">
-         <nav class="navbar">
-        <img src="logo.png" alt="logo" width="200px">
-          
-        <button class="create-blog"> CREATE A BLOG </button>
-           </nav>
-    <header class="header">
-        <div class="content">
-            <h1 class="heading">
-               <span class="small"> WELCOME TO WORLD OF </span>
-               FOOD
-               <span class="no-fill"> Blogging </span>
-           </h1>
-
-       </header>
-
-       <!-- ------modal create post-------- -->
-       <div class="modal hide ">
-        <div class="modal-items">
-            <div class="cross">
-             <h1>Create a post  </h1> <span> <button class="close">    X</button> </span>
-         </div>
-         <input type="text" id="topic" placeholder="Enter your heading...">
-         <textarea name="" id="description" cols="20" rows="5" placeholder="Enter your Blog post..."></textarea>
-
-         <div class="btns">
-            <button class="publish btn" onclick="createPost()">Publish post</button>
-            <button class="cancel btn">Cancel post</button>
-        </div>
-    </div>
-</div>
-<!-- --------modal editing----- -->
-<div class="modal-edit hide">
-    <div class="modal-items">
-        <div class="cross">
-            <h1>Edit a post  </h1> <span> <button  class="close" onclick="closebtn()">X</button> </span>
-     </div>
-     <input type="text" id="edit-topic" placeholder="Enter your heading...">
-     <textarea name="" id="edit-description" cols="20" rows="5" placeholder="Enter your Blog post..."></textarea>
-
-     <div class="btns">
-        <button class="btn" id="edit-post-button" onclick="saveEditPost()">Save post</button>
-        <button class="cancel btn" id="delete-post-button" onclick="deletePost()">Delete post</button>
-    </div>
-
-</div>
-</div>
-
-
-<!-- ----------blog page------ -->
-<div class="blog" id="showPost">
-
-</div>
-  <!-- <div class="footer ">
-    <div class="iconss">
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <nav class="navbar">
+            <img src="logo.png" alt="logo" width="200px">
+            
+            <button class="create-blog"> CREATE A BLOG </button>
+        </nav>
+        <header class="header">
+            <div class="content">
+                <h1 class="heading">
+                <span class="small"> WELCOME TO WORLD OF </span> <br>
+                FOOD
+                <span class="no-fill"> Blogging </span>
+                </h1>
+            </div> 
+            
+        </header>
         
-
-    </div>
-    <img src="logo.png" alt="logo" width="200px">
-    <div class="copyright">
-        <p >© 2023 Tie up Apron by Vanshika
-            <br>All Rights Reserved</p>
-        <p >An elite  food publisher</p>
+        <!-- ------modal create post-------- -->
+        <div class="modal hide ">
+            <div class="modal-items">
+                <div class="cross">
+                    <h1>Create a post  </h1> <span> <button class="close">X</button> </span>
+                </div>
+                <input type="text" id="topic" placeholder="Enter your heading...">
+                <textarea name="" id="description" cols="20" rows="5" placeholder="Enter your Blog post..."></textarea>
+                
+                <div class="btns">
+                    <button class="publish btn" onclick="createPost()">Publish post</button>
+                    <button class="cancel btn">Cancel post</button>
+                </div>
+            </div>
         </div>
+        <!-- --------modal editing----- -->
+        <div class="modal-edit hide">
+            <div class="modal-items">
+                <div class="cross">
+                    <h1>Edit a post  </h1> <span> <button  class="close" onclick="closebtn()">X</button> </span>
+                </div>
+                <input type="text" id="edit-topic" placeholder="Enter your heading...">
+                <textarea name="" id="edit-description" cols="20" rows="5" placeholder="Enter your Blog post..."></textarea>
+                
+                <div class="btns">
+                    <button class="btn" id="edit-post-button" onclick="saveEditPost()">Save post</button>
+                    <button class="cancel btn" id="delete-post-button" onclick="deletePost()">Delete post</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <!-- ----------blog page------ -->
+        <div class="blog" id="showPost">
+            
+        </div>
+        <!-- ------FOOOTER------ -->
+       
+            <div class="footer">
+                <div class="iconss">
 
-  </div> -->
-</div>
-
-
-
-    <script src="script.js"></script>
-</body>
-</html>
+                    <a href="www.instagram.com"> <i class="fa-brands fa-square-instagram"></i></a> 
+                    <a href="www.facebook.com">   <i class="fa-brands fa-facebook"></i></a> 
+                        <a href="www.pinterest.com"> <i class="fa-brands fa-pinterest"></i></a> 
+                            <a href="www.twitter.con">  <i class="fa-brands fa-twitter"></i></a> 
+                    
+                    
+                </div>
+                <div>
+                     <img src="logo.png" alt="logo">
+                </div>
+                <div class="copyright">
+                    <p >© 2023 Tie up Apron by Vanshika
+                        <br>All Rights Reserved</p>
+                        <p >An elite  food publisher</p>
+                </div>
+                    
+            </div>
+        
+        </div> 
+        
+        
+        
+        <script src="script.js"></script>
+    </body>
+    </html>
